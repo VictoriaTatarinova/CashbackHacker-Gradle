@@ -22,6 +22,8 @@ public class CashbackHackServiceTest {
         int amount = 990;
         int expected = 10;
         int actual = service.remain(amount);
+
+        assertEquals(actual, expected);
         System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
     }
 
@@ -30,6 +32,8 @@ public class CashbackHackServiceTest {
         int amount = 1_000;
         int expected = 0;
         int actual = service.remain(amount);
+
+        assertEquals(actual, expected);
         System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
     }
 
@@ -38,6 +42,8 @@ public class CashbackHackServiceTest {
         int amount = 5_000;
         int expected = 0;
         int actual = service.remain(amount);
+
+        assertEquals(actual, expected);
         System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
     }
 
@@ -46,6 +52,8 @@ public class CashbackHackServiceTest {
         int amount = 2_500;
         int expected = 500;
         int actual = service.remain(amount);
+
+        assertEquals(actual, expected);
         System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
     }
 
@@ -54,6 +62,8 @@ public class CashbackHackServiceTest {
         int amount = 0;
         int expected = 1_000;
         int actual = service.remain(amount);
+
+        assertEquals(actual, expected);
         System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
     }
 
