@@ -27,25 +27,25 @@ public class CashbackHackServiceTest {
         System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
     }
 
-//    @Test
-//    public void ShouldNotBuy1000() {
-//        int amount = 1_000;
-//        int expected = 0;
-//        int actual = service.remain(amount);
-//
-//        assertEquals(actual, expected);
-//        System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
-//    }
+    @Test
+    public void ShouldNotBuy1000() {
+        int amount = 1_000;
+        int expected = 0;
+        int actual = service.remain(amount);
 
-//    @Test
-//    public void ShouldNotBuy5000() {
-//        int amount = 5_000;
-//        int expected = 0;
-//        int actual = service.remain(amount);
-//
-//        assertEquals(actual, expected);
-//        System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
-//    }
+        assertEquals(actual, expected);
+        System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
+    }
+
+    @Test
+    public void ShouldNotBuy5000() {
+        int amount = 5_000;
+        int expected = 0;
+        int actual = service.remain(amount);
+
+        assertEquals(actual, expected);
+        System.out.println("Для получения бонуса Вам нужно докупить на сумму " + expected + " рублей");
+    }
 
     @Test
     public void ShouldBuyForMoreBonus() {
